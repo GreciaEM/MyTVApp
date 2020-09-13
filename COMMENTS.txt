@@ -1,0 +1,10 @@
+Debido a la extensión del proyecto, el tiempo de planeación y la cantidad de llamadas a servicios, decidí utilizar una arquitectura MVC.
+
+Como librerías externas, utilicé Alamofire para el consumo de la API TVMaze. Esta librería permite, de manera más simplificada y limpia, realizar las llamadas a APIs. La escogí ya que, a mi parecer, es la mejor documentada y encapsula de una manera más simple todas las posibles configuraciones de URLSession. De igual modo, agiliza la programación de los servicios consumidos por la aplicación.
+
+Con más tiempo me gustaría terminar la parte de paginación de los resultados de la API. Igualmente, me gustaría aplicar una arquitectura mvp para agregar más funcionalidades a la sección del listado de programas, como búsquedas, etc. El incluir más servicios y pensar en el crecimiento de la aplicación, requiere una refactorización de la arquitectura. Otra mejora que me gustaría implementar, sería el soporte multilenguaje y guardar las imágenes en cache para minimizar el uso de red. 
+
+Dar soporte a versiones anteriores de sistema operativo fue una parte que se complicó, debido a que ciertos métodos o declaraciones que facilitan la programación en nuevas versiones, no están disponibles para esas plataformas. Lo resolví tomando en cuenta las maneras anteriores que existen para realizar las mismas tareas e integrándolas para los casos que lo requieran, sin embargo, dejé las versiones más actuales ya que poco a poco se dejará de dar soporte a sistemas operativos anteriores. La falta de simulador con ese sistema
+
+Por cuestiones de tiempo, no logré terminar la sección de pruebas unitarias. Para esta sección necesitaría hacer mocks de algunos métodos en la aplicación para poder probar ciertos flujos, como la carga a un archivo en cache. De igual modo, me faltó programar la compatibilidad completa con sistemas anteriores, como las acciones con swipe, sin embargo, para las versión reciente, la funcionalidad está completa.
+

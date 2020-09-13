@@ -91,3 +91,5 @@ fastlane/test_output
 iOSInjectionProject/
 MyTVApp/.DS_Store
 MyTVApp/MyTVApp/.DS_Store
+.DS_Store
+*.lock
